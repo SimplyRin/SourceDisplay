@@ -31,18 +31,7 @@ function check() {
             if (child != null && child.children[0] != null) {
                 child = child.children[0];
 
-                var accessToken = "";
-                var accessTokenSecret = "";
-                try {
-                    chrome.storage.local.get(['oauth_token', 'oauth_token_secret'], function(value) {
-                        accessToken = value.oauth_token;
-                        accessTokenSecret = value.oauth_token_secret;
-
-                        postRequest("https://api.v2.simplyrin.net/Twitter/SourceViewer/source.php?id=" + href.split("/")[5] + "&accessToken=" + accessToken + "&accessTokenSecret=" + accessTokenSecret, child);
-                    });
-                } catch (e) {
-                    postRequest("https://api.v2.simplyrin.net/Twitter/SourceViewer/source.php?id=" + href.split("/")[5], child);
-                }
+                postRequest("https://api.v2.simplyrin.net/Twitter/SourceViewer/source.php?id=" + href.split("/")[5], child);
             }
         }
     }
@@ -60,9 +49,6 @@ function postRequest(url, child) {
                 console.log(request.statusText);
             }
         }
-    };
-    request.onerror = function (event) {
-        console.log(event.type);
     };
     request.send(null);
 }
