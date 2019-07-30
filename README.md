@@ -1,7 +1,9 @@
 # SourceDisplay
 "Twitter Web Client" で via (source) が見れるようになる Chrome Extension
 
-via (source) 取得時、個人情報を特定できない状態で、取得したツイートIDをロギングします。
+この拡張機能を使用するには [GoodTwitter](https://chrome.google.com/webstore/detail/goodtwitter/jbanhionoclikdjnjlcmefiofgjimgca) または User-Agent などを変更して旧デザインのツイッターを使用している必要があります。
+
+拡張機能にログインしていない場合に限り、ツイートデータをサーバー側でキャッシュします。(IP アドレスなど個人情報は記録されません)
 
 # Chrome Store
 https://chrome.google.com/webstore/detail/source-display-for-web-cl/gelagmjoigjfafiohcbgbkfecgljncik
