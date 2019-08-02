@@ -6,6 +6,3 @@
 ツイートデータをサーバー側でキャッシュします。(IP アドレスなど個人情報は記録されません。)
 
 Chrome Web ストアバージョンでは鍵アカウントの via (source) を見ることができません。
-
-# Chrome Store
-https://chrome.google.com/webstore/detail/source-display-for-web-cl/gelagmjoigjfafiohcbgbkfecgljncik
